@@ -2095,7 +2095,7 @@ MonoBehaviour:
   speed: 2
   gravity: -12
   jumpHeight: 0.8
-  mouseSensitivity: 200
+  mouseSensitivity: 400
   playerCamera: {fileID: 330585546}
   groundCheck: {fileID: 1574369532}
   groundDistance: 0.2
