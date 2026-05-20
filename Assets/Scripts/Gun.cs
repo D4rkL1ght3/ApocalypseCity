@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Gun : MonoBehaviour
@@ -18,13 +19,19 @@ public class Gun : MonoBehaviour
     [SerializeField] private KeyCode shootKey = KeyCode.Mouse0;
     [SerializeField] private KeyCode reloadKey = KeyCode.R;
 
+    public event Action<int, int> OnAmmoChanged;
+
     private int currentAmmo;
     private float nextFireTime;
     private bool isReloading;
 
+    public int CurrentAmmo => currentAmmo;
+    public int MagazineSize => magazineSize;
+
     private void Start()
     {
         currentAmmo = magazineSize;
+        UpdateAmmoUI();
     }
 
     private void Update()
@@ -32,7 +39,7 @@ public class Gun : MonoBehaviour
         if (isReloading)
             return;
 
-        if (Input.GetKeyDown(reloadKey))
+        if (Input.GetKeyDown(reloadKey) || currentAmmo <= 0)
         {
             StartCoroutine(Reload());
             return;
@@ -54,6 +61,8 @@ public class Gun : MonoBehaviour
 
         nextFireTime = Time.time + fireRate;
         currentAmmo--;
+
+        UpdateAmmoUI();
 
         Vector3 shootDirection = playerCamera.transform.forward;
 
@@ -80,6 +89,13 @@ public class Gun : MonoBehaviour
         currentAmmo = magazineSize;
         isReloading = false;
 
+        UpdateAmmoUI();
+
         Debug.Log("Reloaded!");
+    }
+
+    private void UpdateAmmoUI()
+    {
+        OnAmmoChanged?.Invoke(currentAmmo, magazineSize);
     }
 }
