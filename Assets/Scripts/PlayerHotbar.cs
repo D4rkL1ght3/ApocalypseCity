@@ -8,6 +8,7 @@ public class PlayerHotbar : MonoBehaviour
 
     [Header("UI")]
     [SerializeField] private AmmoUI ammoUI;
+    [SerializeField] private HotbarUI hotbarUI;
 
     private GameObject currentSlotObject;
     private Gun currentGun;
@@ -79,6 +80,11 @@ public class PlayerHotbar : MonoBehaviour
             return;
 
         selectedSlotIndex = index;
+
+        if (hotbarUI != null)
+        {
+            hotbarUI.UpdateSelectedSlot(selectedSlotIndex);
+        }
 
         if (currentSlotObject != null)
         {
