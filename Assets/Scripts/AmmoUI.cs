@@ -4,35 +4,65 @@ using UnityEngine;
 public class AmmoUI : MonoBehaviour
 {
     [Header("References")]
-    [SerializeField] private Gun gun;
     [SerializeField] private TMP_Text ammoText;
 
-    private void OnEnable()
+    private Gun currentGun;
+
+    public void SetGun(Gun newGun)
     {
-        if (gun != null)
+        if (currentGun != null)
         {
-            gun.OnAmmoChanged += UpdateAmmoText;
+            currentGun.OnAmmoChanged -= UpdateAmmoText;
         }
+
+        currentGun = newGun;
+
+        if (currentGun == null)
+        {
+            Hide();
+            return;
+        }
+
+        currentGun.OnAmmoChanged += UpdateAmmoText;
+
+        Show();
+        UpdateAmmoText(currentGun.CurrentAmmo, currentGun.MagazineSize);
     }
 
-    private void OnDisable()
+    public void ClearGun()
     {
-        if (gun != null)
+        if (currentGun != null)
         {
-            gun.OnAmmoChanged -= UpdateAmmoText;
+            currentGun.OnAmmoChanged -= UpdateAmmoText;
+            currentGun = null;
         }
-    }
 
-    private void Start()
-    {
-        if (gun != null && ammoText != null)
-        {
-            UpdateAmmoText(gun.CurrentAmmo, gun.MagazineSize);
-        }
+        Hide();
     }
 
     private void UpdateAmmoText(int currentAmmo, int magazineSize)
     {
+        if (ammoText == null)
+            return;
+
         ammoText.text = currentAmmo + " / " + magazineSize;
+    }
+
+    private void Show()
+    {
+        gameObject.SetActive(true);
+    }
+
+    private void Hide()
+    {
+        gameObject.SetActive(false);
+    }
+
+    private void OnDestroy()
+    {
+        if (currentGun != null)
+        {
+            currentGun.OnAmmoChanged -= UpdateAmmoText;
+        }
     }
 }

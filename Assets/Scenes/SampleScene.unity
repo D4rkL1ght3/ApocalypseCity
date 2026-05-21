@@ -2729,7 +2729,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98ccbbd64b6e8b6409e9abd6424dd61d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AmmoUI
-  gun: {fileID: 358964851}
   ammoText: {fileID: 1401951808}
 --- !u!1001 &1547426906
 PrefabInstance:
@@ -2993,9 +2992,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1684987092}
-  - component: {fileID: 1684987093}
   - component: {fileID: 1684987094}
+  - component: {fileID: 1684987093}
   - component: {fileID: 1684987095}
+  - component: {fileID: 1684987096}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3089,6 +3089,42 @@ MonoBehaviour:
   onDeath:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1684987096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684987090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3f97d7a0e2f68d418f364ec06ac3637, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHotbar
+  slots:
+  - slotName: 
+    itemType: 1
+    slotObject: {fileID: 0}
+  - slotName: 
+    itemType: 0
+    slotObject: {fileID: 0}
+  - slotName: 
+    itemType: 0
+    slotObject: {fileID: 0}
+  - slotName: 
+    itemType: 0
+    slotObject: {fileID: 0}
+  - slotName: 
+    itemType: 0
+    slotObject: {fileID: 0}
+  - slotName: 
+    itemType: 0
+    slotObject: {fileID: 0}
+  - slotName: 
+    itemType: 0
+    slotObject: {fileID: 0}
+  selectedSlotIndex: 0
+  ammoUI: {fileID: 1508400954}
 --- !u!1001 &1743667166
 PrefabInstance:
   m_ObjectHideFlags: 0

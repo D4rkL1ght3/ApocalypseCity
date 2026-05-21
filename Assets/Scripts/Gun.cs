@@ -24,14 +24,20 @@ public class Gun : MonoBehaviour
     private int currentAmmo;
     private float nextFireTime;
     private bool isReloading;
+    private bool hasInitialized;
 
     public int CurrentAmmo => currentAmmo;
     public int MagazineSize => magazineSize;
 
-    private void Start()
+    private void Awake()
     {
-        currentAmmo = magazineSize;
-        UpdateAmmoUI();
+        InitializeAmmo();
+    }
+
+    private void OnEnable()
+    {
+        InitializeAmmo();
+        RefreshAmmoUI();
     }
 
     private void Update()
@@ -51,6 +57,15 @@ public class Gun : MonoBehaviour
         }
     }
 
+    private void InitializeAmmo()
+    {
+        if (hasInitialized)
+            return;
+
+        currentAmmo = magazineSize;
+        hasInitialized = true;
+    }
+
     private void Shoot()
     {
         if (currentAmmo <= 0)
@@ -62,7 +77,7 @@ public class Gun : MonoBehaviour
         nextFireTime = Time.time + fireRate;
         currentAmmo--;
 
-        UpdateAmmoUI();
+        RefreshAmmoUI();
 
         Vector3 shootDirection = playerCamera.transform.forward;
 
@@ -82,19 +97,19 @@ public class Gun : MonoBehaviour
 
         isReloading = true;
 
-        Debug.Log("Reloading...");
+        Debug.Log(gameObject.name + " reloading...");
 
         yield return new WaitForSeconds(reloadTime);
 
         currentAmmo = magazineSize;
         isReloading = false;
 
-        UpdateAmmoUI();
+        RefreshAmmoUI();
 
-        Debug.Log("Reloaded!");
+        Debug.Log(gameObject.name + " reloaded!");
     }
 
-    private void UpdateAmmoUI()
+    public void RefreshAmmoUI()
     {
         OnAmmoChanged?.Invoke(currentAmmo, magazineSize);
     }
