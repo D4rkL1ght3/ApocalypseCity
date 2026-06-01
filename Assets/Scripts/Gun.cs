@@ -32,6 +32,11 @@ public class Gun : MonoBehaviour
     private void Awake()
     {
         InitializeAmmo();
+
+        if (playerCamera == null)
+        {
+            playerCamera = Camera.main;
+        }
     }
 
     private void OnEnable()

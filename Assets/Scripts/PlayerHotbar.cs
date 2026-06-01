@@ -6,16 +6,23 @@ public class PlayerHotbar : MonoBehaviour
     [SerializeField] private HotbarSlot[] slots = new HotbarSlot[7];
     [SerializeField] private int selectedSlotIndex = 0;
 
+    [Header("Item Holding")]
+    [SerializeField] private Transform itemHolder;
+
     [Header("UI")]
     [SerializeField] private AmmoUI ammoUI;
     [SerializeField] private HotbarUI hotbarUI;
 
-    private GameObject currentSlotObject;
+    private GameObject currentHandObject;
     private Gun currentGun;
 
     private void Start()
     {
-        DisableAllSlotObjects();
+        if (hotbarUI != null)
+        {
+            hotbarUI.UpdateHotbar(slots);
+        }
+
         SelectSlot(selectedSlotIndex);
     }
 
@@ -84,19 +91,14 @@ public class PlayerHotbar : MonoBehaviour
         if (hotbarUI != null)
         {
             hotbarUI.UpdateSelectedSlot(selectedSlotIndex);
+            hotbarUI.UpdateHotbar(slots);
         }
 
-        if (currentSlotObject != null)
-        {
-            currentSlotObject.SetActive(false);
-        }
-
-        currentSlotObject = null;
-        currentGun = null;
+        UnequipCurrentObject();
 
         HotbarSlot selectedSlot = slots[selectedSlotIndex];
 
-        if (selectedSlot == null || selectedSlot.itemType == HotbarItemType.Empty || selectedSlot.slotObject == null)
+        if (selectedSlot == null || selectedSlot.IsEmpty())
         {
             if (ammoUI != null)
             {
@@ -107,12 +109,31 @@ public class PlayerHotbar : MonoBehaviour
             return;
         }
 
-        currentSlotObject = selectedSlot.slotObject;
-        currentSlotObject.SetActive(true);
+        EquipSlot(selectedSlot);
+    }
 
-        if (selectedSlot.itemType == HotbarItemType.Weapon)
+    private void EquipSlot(HotbarSlot slot)
+    {
+        ItemData itemData = slot.itemData;
+
+        if (itemData == null)
+            return;
+
+        if (slot.spawnedHandObject == null)
         {
-            currentGun = currentSlotObject.GetComponentInChildren<Gun>(true);
+            SpawnSlotItem(slot);
+        }
+
+        currentHandObject = slot.spawnedHandObject;
+
+        if (currentHandObject != null)
+        {
+            currentHandObject.SetActive(true);
+        }
+
+        if (itemData.itemType == ItemType.Weapon)
+        {
+            currentGun = currentHandObject.GetComponentInChildren<Gun>(true);
 
             if (currentGun != null)
             {
@@ -123,7 +144,7 @@ public class PlayerHotbar : MonoBehaviour
 
                 currentGun.RefreshAmmoUI();
 
-                Debug.Log("Selected weapon slot " + (selectedSlotIndex + 1) + ": " + selectedSlot.slotName);
+                Debug.Log("Equipped weapon: " + itemData.itemName);
             }
             else
             {
@@ -132,28 +153,61 @@ public class PlayerHotbar : MonoBehaviour
                     ammoUI.ClearGun();
                 }
 
-                Debug.LogWarning("Slot is marked as Weapon, but no Gun component was found.");
+                Debug.LogWarning(itemData.itemName + " is marked as Weapon, but no Gun component was found.");
             }
         }
-        else if (selectedSlot.itemType == HotbarItemType.Item)
+        else
         {
             if (ammoUI != null)
             {
                 ammoUI.ClearGun();
             }
 
-            Debug.Log("Selected item slot " + (selectedSlotIndex + 1) + ": " + selectedSlot.slotName);
+            Debug.Log("Equipped item: " + itemData.itemName);
         }
     }
 
-    private void DisableAllSlotObjects()
+    private void SpawnSlotItem(HotbarSlot slot)
     {
-        for (int i = 0; i < slots.Length; i++)
+        if (slot == null || slot.itemData == null)
+            return;
+
+        if (slot.itemData.handPrefab == null)
         {
-            if (slots[i] != null && slots[i].slotObject != null)
-            {
-                slots[i].slotObject.SetActive(false);
-            }
+            Debug.LogWarning(slot.itemData.itemName + " has no hand prefab assigned.");
+            return;
         }
+
+        if (itemHolder == null)
+        {
+            Debug.LogError("PlayerHotbar has no item holder assigned.");
+            return;
+        }
+
+        GameObject spawnedObject = Instantiate(
+            slot.itemData.handPrefab,
+            itemHolder.position,
+            itemHolder.rotation,
+            itemHolder
+        );
+
+        spawnedObject.transform.localPosition = Vector3.zero;
+        spawnedObject.transform.localRotation = Quaternion.identity;
+        spawnedObject.transform.localScale = Vector3.one;
+
+        spawnedObject.SetActive(false);
+
+        slot.spawnedHandObject = spawnedObject;
+    }
+
+    private void UnequipCurrentObject()
+    {
+        if (currentHandObject != null)
+        {
+            currentHandObject.SetActive(false);
+        }
+
+        currentHandObject = null;
+        currentGun = null;
     }
 }
