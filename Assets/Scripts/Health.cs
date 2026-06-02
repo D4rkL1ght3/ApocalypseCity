@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -11,6 +12,8 @@ public class Health : MonoBehaviour, IDamageable
     public UnityEvent onTakeDamage;
     public UnityEvent onDeath;
 
+    public event Action<float, float> OnHealthChanged;
+
     private float currentHealth;
     private bool isDead;
 
@@ -21,6 +24,11 @@ public class Health : MonoBehaviour, IDamageable
     private void Awake()
     {
         currentHealth = maxHealth;
+    }
+
+    private void Start()
+    {
+        NotifyHealthChanged();
     }
 
     public void TakeDamage(float damageAmount)
@@ -36,6 +44,7 @@ public class Health : MonoBehaviour, IDamageable
 
         Debug.Log(gameObject.name + " took " + damageAmount + " damage. HP: " + currentHealth + "/" + maxHealth);
 
+        NotifyHealthChanged();
         onTakeDamage?.Invoke();
 
         if (currentHealth <= 0)
@@ -56,6 +65,8 @@ public class Health : MonoBehaviour, IDamageable
         currentHealth = Mathf.Clamp(currentHealth, 0f, maxHealth);
 
         Debug.Log(gameObject.name + " healed " + healAmount + " HP. HP: " + currentHealth + "/" + maxHealth);
+
+        NotifyHealthChanged();
     }
 
     private void Die()
@@ -73,5 +84,10 @@ public class Health : MonoBehaviour, IDamageable
         {
             Destroy(gameObject);
         }
+    }
+
+    public void NotifyHealthChanged()
+    {
+        OnHealthChanged?.Invoke(currentHealth, maxHealth);
     }
 }

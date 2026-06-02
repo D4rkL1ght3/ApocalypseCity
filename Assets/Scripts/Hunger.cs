@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -12,9 +13,9 @@ public class Hunger : MonoBehaviour
     [SerializeField] private bool damageWhenStarving = true;
     [SerializeField] private float starvationDamagePerSecond = 5f;
 
-    [Header("Events")]
-    public UnityEvent onHungerChanged;
     public UnityEvent onStarving;
+
+    public event Action<float, float> OnHungerChanged;
 
     private Health health;
 
@@ -26,6 +27,11 @@ public class Hunger : MonoBehaviour
     {
         currentHunger = Mathf.Clamp(currentHunger, 0f, maxHunger);
         health = GetComponent<Health>();
+    }
+
+    private void Start()
+    {
+        NotifyHungerChanged();
     }
 
     private void Update()
@@ -78,7 +84,12 @@ public class Hunger : MonoBehaviour
 
         if (!Mathf.Approximately(oldHunger, currentHunger))
         {
-            onHungerChanged?.Invoke();
+            NotifyHungerChanged();
         }
+    }
+
+    public void NotifyHungerChanged()
+    {
+        OnHungerChanged?.Invoke(currentHunger, maxHunger);
     }
 }
