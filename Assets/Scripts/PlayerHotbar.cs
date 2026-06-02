@@ -30,6 +30,7 @@ public class PlayerHotbar : MonoBehaviour
     {
         HandleNumberKeyInput();
         HandleScrollWheelInput();
+        HandleUseInput();
     }
 
     private void HandleNumberKeyInput()
@@ -165,6 +166,87 @@ public class PlayerHotbar : MonoBehaviour
 
             Debug.Log("Equipped item: " + itemData.itemName);
         }
+    }
+
+    private void HandleUseInput()
+    {
+        if (!Input.GetKeyDown(KeyCode.Mouse0))
+            return;
+
+        HotbarSlot selectedSlot = slots[selectedSlotIndex];
+
+        if (selectedSlot == null || selectedSlot.IsEmpty())
+            return;
+
+        ItemData itemData = selectedSlot.itemData;
+
+        if (itemData.itemType == ItemType.Weapon)
+            return;
+
+        UseSelectedItem();
+    }
+
+    private void UseSelectedItem()
+    {
+        HotbarSlot selectedSlot = slots[selectedSlotIndex];
+
+        if (selectedSlot == null || selectedSlot.IsEmpty())
+            return;
+
+        if (selectedSlot.spawnedHandObject == null)
+        {
+            SpawnSlotItem(selectedSlot);
+        }
+
+        if (selectedSlot.spawnedHandObject == null)
+            return;
+
+        IUsable usable = selectedSlot.spawnedHandObject.GetComponentInChildren<IUsable>(true);
+
+        if (usable == null)
+        {
+            Debug.LogWarning(selectedSlot.itemData.itemName + " is selected, but it has no usable script.");
+            return;
+        }
+
+        bool wasConsumed = usable.Use(gameObject);
+
+        if (wasConsumed)
+        {
+            ConsumeSelectedSlotItem();
+        }
+    }
+
+    private void ConsumeSelectedSlotItem()
+    {
+        HotbarSlot selectedSlot = slots[selectedSlotIndex];
+
+        if (selectedSlot == null)
+            return;
+
+        if (selectedSlot.spawnedHandObject != null)
+        {
+            Destroy(selectedSlot.spawnedHandObject);
+        }
+
+        selectedSlot.spawnedHandObject = null;
+        selectedSlot.itemData = null;
+
+        currentHandObject = null;
+        currentGun = null;
+
+        if (ammoUI != null)
+        {
+            ammoUI.ClearGun();
+        }
+
+        if (hotbarUI != null)
+        {
+            hotbarUI.UpdateHotbar(slots);
+            hotbarUI.UpdateSelectedSlot(selectedSlotIndex);
+        }
+
+        Debug.Log("Consumed item in slot " + (selectedSlotIndex + 1));
     }
 
     private void SpawnSlotItem(HotbarSlot slot)

@@ -3746,6 +3746,7 @@ GameObject:
   - component: {fileID: 1684987093}
   - component: {fileID: 1684987095}
   - component: {fileID: 1684987096}
+  - component: {fileID: 1684987097}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3854,7 +3855,7 @@ MonoBehaviour:
   slots:
   - itemData: {fileID: 11400000, guid: 9951e4ef2001eac48b25d021e7e3c229, type: 2}
     spawnedHandObject: {fileID: 0}
-  - itemData: {fileID: 0}
+  - itemData: {fileID: 11400000, guid: 151938587b205ff4d8610c107aef1264, type: 2}
     spawnedHandObject: {fileID: 0}
   - itemData: {fileID: 0}
     spawnedHandObject: {fileID: 0}
@@ -3870,6 +3871,29 @@ MonoBehaviour:
   itemHolder: {fileID: 728760932}
   ammoUI: {fileID: 1401951810}
   hotbarUI: {fileID: 879232960}
+--- !u!114 &1684987097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684987090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e95c6c25d7f67f4997d39bbeac1465d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Hunger
+  maxHunger: 100
+  currentHunger: 100
+  hungerDrainPerSecond: 0.5
+  damageWhenStarving: 1
+  starvationDamagePerSecond: 5
+  onHungerChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  onStarving:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1743667166
 PrefabInstance:
   m_ObjectHideFlags: 0
