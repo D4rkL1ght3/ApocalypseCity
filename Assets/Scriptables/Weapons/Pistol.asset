@@ -16,3 +16,4 @@ MonoBehaviour:
   itemType: 0
   itemIcon: {fileID: 0}
   handPrefab: {fileID: 4559604377589664050, guid: 9edbc389cfae35e4189dab598aa3b3f7, type: 3}
+  pickupPrefab: {fileID: 4559604377589664050, guid: 0bb764e7a9c5ffb4f9d124153c666930, type: 3}

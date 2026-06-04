@@ -49,24 +49,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: d70c5f7b429608b4a8cc266435d952c4, type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: d70c5f7b429608b4a8cc266435d952c4, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: a97e22a31ae22b049a42ef72f0f39213, type: 2}
-    - target: {fileID: -7511558181221131132, guid: d70c5f7b429608b4a8cc266435d952c4, type: 3}
-      propertyPath: 'm_Materials.Array.data[1]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 467c7a4409c9fe94f9f785b619e5afe8, type: 2}
     - target: {fileID: 919132149155446097, guid: d70c5f7b429608b4a8cc266435d952c4, type: 3}
       propertyPath: m_Name
       value: Burger
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: d70c5f7b429608b4a8cc266435d952c4, type: 3}
-      propertyPath: m_Layer
-      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -74,68 +62,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d70c5f7b429608b4a8cc266435d952c4, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6449848006177976261}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d70c5f7b429608b4a8cc266435d952c4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8967120963594433223}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d70c5f7b429608b4a8cc266435d952c4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2840197350270246020}
+      addedObject: {fileID: 5174491947393500125}
   m_SourcePrefab: {fileID: 100100000, guid: d70c5f7b429608b4a8cc266435d952c4, type: 3}
 --- !u!1 &4423124769016567343 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d70c5f7b429608b4a8cc266435d952c4, type: 3}
   m_PrefabInstance: {fileID: 3576827164894161790}
   m_PrefabAsset: {fileID: 0}
---- !u!135 &6449848006177976261
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4423124769016567343}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.0004
-  m_Center: {x: -0.00012625383, y: -0.0003859535, z: -0.0000013553654}
---- !u!54 &8967120963594433223
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4423124769016567343}
-  serializedVersion: 5
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 1
---- !u!114 &2840197350270246020
+--- !u!114 &5174491947393500125
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,7 +78,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 4423124769016567343}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9951ccf3a1870a749a2b6ae0ccfad177, type: 3}
+  m_Script: {fileID: 11500000, guid: 7252fc98b18891849bf1f7afb4f2d8f5, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ItemPickup
-  itemData: {fileID: 11400000, guid: 151938587b205ff4d8610c107aef1264, type: 2}
+  m_EditorClassIdentifier: Assembly-CSharp::FoodItem
+  hungerRestoreAmount: 25
+  consumeOnUse: 1

@@ -19,4 +19,7 @@ public class ItemData : ScriptableObject
 
     [Header("Equipped Prefab")]
     public GameObject handPrefab;
+
+    [Header("World Pickup Prefab")]
+    public GameObject pickupPrefab;
 }
