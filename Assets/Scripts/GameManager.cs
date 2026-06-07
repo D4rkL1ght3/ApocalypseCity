@@ -10,11 +10,16 @@ public class GameManager : MonoBehaviour
     [SerializeField] private GameObject gameOverUI;
     [SerializeField] private GameObject gameplayUI;
 
+    [Header("Cameras")]
+    [SerializeField] private Camera menuCamera;
+    [SerializeField] private Camera playerCamera;
+
     [Header("Player")]
     [SerializeField] private GameObject playerObject;
     [SerializeField] private PlayerController playerController;
     [SerializeField] private PlayerHotbar playerHotbar;
     [SerializeField] private PlayerItemInteract playerItemInteract;
+    [SerializeField] private Transform playerSpawnPoint;
 
     [Header("Enemies")]
     [SerializeField] private GameObject enemiesParent;
@@ -55,6 +60,12 @@ public class GameManager : MonoBehaviour
         if (gameplayUI != null)
             gameplayUI.SetActive(false);
 
+        if (menuCamera != null)
+            menuCamera.gameObject.SetActive(true);
+
+        if (playerCamera != null)
+            playerCamera.gameObject.SetActive(false);
+
         SetPlayerControls(false);
         SetEnemiesActive(false);
 
@@ -75,6 +86,15 @@ public class GameManager : MonoBehaviour
 
         if (gameplayUI != null)
             gameplayUI.SetActive(true);
+
+        if (menuCamera != null)
+            menuCamera.gameObject.SetActive(false);
+
+        if (playerCamera != null)
+            playerCamera.gameObject.SetActive(true);
+
+        playerObject.transform.position = playerSpawnPoint.position;
+        playerObject.transform.rotation = playerSpawnPoint.rotation;
 
         SetPlayerControls(true);
         SetEnemiesActive(true);
