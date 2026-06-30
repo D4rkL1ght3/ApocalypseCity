@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3638705798533940633}
   - component: {fileID: 5702754608972709807}
   - component: {fileID: 2024588422202639190}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Telephone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2177528083724030403}
   - component: {fileID: 4236221560982210807}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -157,7 +157,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7332957887272735324}
   - component: {fileID: 6699501102701137427}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -210,7 +210,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1696669771529151698}
   - component: {fileID: 6650080464262431424}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -263,7 +263,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4158906692524221931}
   - component: {fileID: 5657189101955309793}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

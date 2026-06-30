@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4295262584189825568}
   - component: {fileID: 4295262584189825569}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63,7 +63,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4295262584465835444}
   - component: {fileID: 4295262584465835445}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 9142696877419751385}
   - component: {fileID: 268638048087072239}
   - component: {fileID: 5802586350794940694}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Trafficlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}

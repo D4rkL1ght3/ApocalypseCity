@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1542004965889626323}
   - component: {fileID: 7511243211976895205}
   - component: {fileID: 4251893433586259484}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: HouseBig 5 a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1371620277439913997}
   - component: {fileID: 7749478983220318085}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,7 +155,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4717090373539556277}
   - component: {fileID: 2349261321640807424}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}

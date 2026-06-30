@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4569726300944328553}
   - component: {fileID: 4769852299088813407}
   - component: {fileID: 1228746092633334182}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: HouseBig 1 b
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2552494906701373153}
   - component: {fileID: 5915603944561623789}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -158,7 +158,7 @@ GameObject:
   m_Component:
   - component: {fileID: 44153549080037309}
   - component: {fileID: 6379341543020614527}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -211,7 +211,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3563978406136192531}
   - component: {fileID: 4400975536538924725}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -264,7 +264,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2734131711604592804}
   - component: {fileID: 5481510027171165402}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -317,7 +317,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6140862772953091492}
   - component: {fileID: 4887667580115651518}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

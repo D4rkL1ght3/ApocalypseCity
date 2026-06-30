@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2391037480112569310}
   - component: {fileID: 6662421801799123432}
   - component: {fileID: 1101451437487291665}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: House 3 d
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4172845162303358827}
   - component: {fileID: 180842414315927796}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,7 +155,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3726090704148737306}
   - component: {fileID: 6507965387321069764}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

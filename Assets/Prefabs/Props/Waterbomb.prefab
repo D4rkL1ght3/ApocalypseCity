@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3243264891304191653}
   - component: {fileID: 3243264891304191652}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   - component: {fileID: 7527996518035134356}
   - component: {fileID: 1523296727884606882}
   - component: {fileID: 5052861927736758619}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Waterbomb
   m_TagString: Untagged
   m_Icon: {fileID: 0}

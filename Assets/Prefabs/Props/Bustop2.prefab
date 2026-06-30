@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3692621256896818812}
   - component: {fileID: 3692621256896818813}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63,7 +63,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3692621257131446607}
   - component: {fileID: 3692621257131446600}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3692621257806167651}
   - component: {fileID: 3692621257806167660}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3692621257831070643}
   - component: {fileID: 3692621257831070652}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -222,7 +222,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3692621258150244649}
   - component: {fileID: 3692621258150244650}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -276,7 +276,7 @@ GameObject:
   - component: {fileID: 8522050429560636033}
   - component: {fileID: 801465953553643703}
   - component: {fileID: 6351175409709188174}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Bustop2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

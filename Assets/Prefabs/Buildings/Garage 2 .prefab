@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7456662992513210212}
   - component: {fileID: 2535965949083607943}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   - component: {fileID: 3267172787923423403}
   - component: {fileID: 5768076380033034909}
   - component: {fileID: 229924938729608804}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'Garage 2 '
   m_TagString: Untagged
   m_Icon: {fileID: 0}

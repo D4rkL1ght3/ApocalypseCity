@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2603499711712101323}
   - component: {fileID: 328923227483041158}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'Collider '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   - component: {fileID: 6406956549790674271}
   - component: {fileID: 2715973724018677609}
   - component: {fileID: 8542654342231387024}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Building 2 c
   m_TagString: Untagged
   m_Icon: {fileID: 0}

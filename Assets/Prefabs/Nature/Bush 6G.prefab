@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 252186454582947353}
   - component: {fileID: 252186454582947350}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   - component: {fileID: 5045516955344383112}
   - component: {fileID: 4277927405459084990}
   - component: {fileID: 7521795484613601863}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Bush 6G
   m_TagString: Untagged
   m_Icon: {fileID: 0}

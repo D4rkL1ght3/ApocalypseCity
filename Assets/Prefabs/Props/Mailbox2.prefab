@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4524459113452250520}
   - component: {fileID: 4868704732028772270}
   - component: {fileID: 1201779694418879319}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Mailbox2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8912816459406520877}
   - component: {fileID: 8912816459406520876}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,7 +155,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8912816460974590905}
   - component: {fileID: 8912816460974590904}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

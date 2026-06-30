@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1766292413637898898}
   - component: {fileID: 4579270960519929943}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63,7 +63,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7997246964927556215}
   - component: {fileID: 7416533468333467592}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9158489347224974341}
   - component: {fileID: 8282910924388647061}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -170,7 +170,7 @@ GameObject:
   - component: {fileID: 1789963212543898461}
   - component: {fileID: 7317290229545372011}
   - component: {fileID: 3940849625056343442}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Modernbuilding 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -263,7 +263,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3851721488808067432}
   - component: {fileID: 4904412592040438215}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

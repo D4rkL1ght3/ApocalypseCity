@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7399202560406934669}
   - component: {fileID: 3089002159829480207}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   - component: {fileID: 2137664115190849738}
   - component: {fileID: 6985510254490671868}
   - component: {fileID: 3732655040012756485}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Lighta
   m_TagString: Untagged
   m_Icon: {fileID: 0}

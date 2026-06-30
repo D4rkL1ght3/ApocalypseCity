@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1524361005224616120}
   - component: {fileID: 7405714034354669761}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'Collider '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   - component: {fileID: 4698826386559402389}
   - component: {fileID: 4354579565550779299}
   - component: {fileID: 8021502887431489370}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Store 1 b
   m_TagString: Untagged
   m_Icon: {fileID: 0}

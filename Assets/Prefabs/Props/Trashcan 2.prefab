@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3945643816055892205}
   - component: {fileID: 1253092356113010184}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   - component: {fileID: 7665827760236828991}
   - component: {fileID: 1673503996220908297}
   - component: {fileID: 4901590331578540016}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Trashcan 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2430541946405308734}
   - component: {fileID: 6834963880379876468}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   - component: {fileID: 6126082355437706562}
   - component: {fileID: 2909098649204565876}
   - component: {fileID: 8891153111367015309}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Floortrapdoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}

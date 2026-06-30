@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2558332456863747325}
   - component: {fileID: 8016613338840600485}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   - component: {fileID: 7456273177664526020}
   - component: {fileID: 1882793043245444338}
   - component: {fileID: 5268524538587729931}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Dangersing2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,7 +155,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6101530915563046270}
   - component: {fileID: 6827220607745727497}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

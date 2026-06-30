@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1557210792558398051}
   - component: {fileID: 1557210792558398050}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63,7 +63,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5144071727129310291}
   - component: {fileID: 4620098451933869067}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 5829599903847669631}
   - component: {fileID: 3296037371886363977}
   - component: {fileID: 9115683589574957488}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tashspot2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

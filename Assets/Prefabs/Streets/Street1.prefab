@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4170937215697395012}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Street1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 6614725766907108015}
   - component: {fileID: 2517117195222414943}
   - component: {fileID: 6131931201240249059}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}

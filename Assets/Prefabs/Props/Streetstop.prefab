@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 759855618639775874}
   - component: {fileID: 747735608938001029}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   - component: {fileID: 4400466338942287819}
   - component: {fileID: 4632689357767624189}
   - component: {fileID: 1402333649729435908}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Streetstop
   m_TagString: Untagged
   m_Icon: {fileID: 0}

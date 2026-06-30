@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1603346900162632324}
   - component: {fileID: 7717829722207805618}
   - component: {fileID: 4046401074258385995}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Carstop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5997263411919951083}
   - component: {fileID: 5997263411919951080}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

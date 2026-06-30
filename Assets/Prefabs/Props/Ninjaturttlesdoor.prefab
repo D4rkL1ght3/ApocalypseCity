@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4393659878858826874}
   - component: {fileID: 4729462261604359756}
   - component: {fileID: 1341762307998409397}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ninjaturttlesdoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8756086944380473569}
   - component: {fileID: 8756086944380473574}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

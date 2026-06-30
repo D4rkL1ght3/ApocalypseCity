@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 1067012320810400558}
   - component: {fileID: 328211396025823229}
   - component: {fileID: 9055798011330282253}
-  m_Layer: 0
+  - component: {fileID: 3241383722591617510}
+  m_Layer: 3
   m_Name: default
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -90,6 +91,28 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3241383722591617510
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69531692463964056}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: 3b3481ad4dcfaf74ea8b350ff9624230, type: 3}
 --- !u!1 &5835341421267835397
 GameObject:
   m_ObjectHideFlags: 0
@@ -99,8 +122,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7394934519202850838}
-  - component: {fileID: 2583554415130936074}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Street21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,25 +145,3 @@ Transform:
   - {fileID: 1067012320810400558}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &2583554415130936074
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5835341421267835397}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}

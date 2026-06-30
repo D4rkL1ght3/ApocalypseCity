@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3701569987039911423}
   - component: {fileID: 3701569987039911416}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63,7 +63,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3701569987965060067}
   - component: {fileID: 3701569987965060092}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 8512975942115604000}
   - component: {fileID: 828429488742206486}
   - component: {fileID: 6360108863290339567}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Bushesbox 1G
   m_TagString: Untagged
   m_Icon: {fileID: 0}

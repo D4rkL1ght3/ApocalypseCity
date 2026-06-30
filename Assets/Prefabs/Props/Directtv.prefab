@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2579674162309385487}
   - component: {fileID: 6816146654098061113}
   - component: {fileID: 984977906603166656}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Directtv
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7401212118157500542}
   - component: {fileID: 7401212118157500543}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

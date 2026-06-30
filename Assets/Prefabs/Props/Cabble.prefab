@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3750229523775940799}
   - component: {fileID: 7437682185619051590}
   - component: {fileID: 8106947342492050981}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cabble
   m_TagString: Untagged
   m_Icon: {fileID: 0}

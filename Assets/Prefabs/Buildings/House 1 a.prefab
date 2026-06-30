@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2578502366046284361}
   - component: {fileID: 6814975940032876671}
   - component: {fileID: 986044131630754950}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: House 1 a
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2101771250453340754}
   - component: {fileID: 2482683690965463164}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}

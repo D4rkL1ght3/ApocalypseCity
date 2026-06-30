@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2933496028295074007}
   - component: {fileID: 6192125851014998753}
   - component: {fileID: 491544147355293208}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Bush 3G
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7912661639540383135}
   - component: {fileID: 7912661639540383200}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

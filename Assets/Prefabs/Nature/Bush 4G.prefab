@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3278219124587288279}
   - component: {fileID: 5775185184700099809}
   - component: {fileID: 223241785217781784}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Bush 4G
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7495157608893780914}
   - component: {fileID: 7495157608893780915}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

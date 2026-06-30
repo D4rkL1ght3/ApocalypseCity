@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3393609823293974336}
   - component: {fileID: 5927722926508449142}
   - component: {fileID: 107815856128549263}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Outsidechair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4306548733852324877}
   - component: {fileID: 4720744541578606410}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,7 +155,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7529099374039916782}
   - component: {fileID: 6913159555835848892}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

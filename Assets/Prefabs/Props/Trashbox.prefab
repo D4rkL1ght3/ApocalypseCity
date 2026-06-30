@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4189346612628965056}
   - component: {fileID: 5150018127030090998}
   - component: {fileID: 1460295856014524431}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Trashbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9176427576108560334}
   - component: {fileID: 9176427576108560335}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

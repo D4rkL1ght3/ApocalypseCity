@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3460499549989582992}
   - component: {fileID: 5574661110462153382}
   - component: {fileID: 2189213231556591199}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Airconditioner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8465816012709605974}
   - component: {fileID: 8465816012709605961}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

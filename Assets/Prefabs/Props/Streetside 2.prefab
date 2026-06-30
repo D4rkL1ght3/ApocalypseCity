@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3678648068807208762}
   - component: {fileID: 3678648068807208763}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   - component: {fileID: 8536461095030719748}
   - component: {fileID: 805190628814143282}
   - component: {fileID: 6345596025872008139}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Streetside 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

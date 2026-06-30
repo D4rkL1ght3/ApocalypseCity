@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1326132755400605430}
   - component: {fileID: 1326132755400605429}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   - component: {fileID: 6277431263630564166}
   - component: {fileID: 3046382535466459504}
   - component: {fileID: 8753420622683790729}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Bush 2V
   m_TagString: Untagged
   m_Icon: {fileID: 0}

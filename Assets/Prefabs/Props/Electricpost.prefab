@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4061091722064099879}
   - component: {fileID: 6467790373950003203}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   - component: {fileID: 464570282222310414}
   - component: {fileID: 8874759277120548408}
   - component: {fileID: 2888482886121722561}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Electricpost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,7 +156,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4830331580816479233}
   - component: {fileID: 4830331580816479234}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -209,7 +209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4830331582768668816}
   - component: {fileID: 4830331582768668817}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

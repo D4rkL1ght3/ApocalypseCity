@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 724486229964429207}
   - component: {fileID: 8599309973760912801}
   - component: {fileID: 2624028168359891288}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Bush 6V
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5726134158718879660}
   - component: {fileID: 5726134158718879663}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}

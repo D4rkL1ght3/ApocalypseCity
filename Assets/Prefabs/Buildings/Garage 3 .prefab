@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 309110806769345476}
   - component: {fileID: 8723798049882085874}
   - component: {fileID: 3039262827089782027}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 'Garage 3 '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 449674773360969402}
   - component: {fileID: 72644249323554024}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2201586779177937871}
   - component: {fileID: 7194110343542985209}
   - component: {fileID: 3524652020136684800}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Streetsing2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4608114039471958054}
   - component: {fileID: 1817022306246271948}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,7 +156,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2595818017277743766}
   - component: {fileID: 3501604178408031385}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -209,7 +209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8858684613355986856}
   - component: {fileID: 4502013339964663048}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8161913153136499746}
   - component: {fileID: 873687864943388180}
   - component: {fileID: 6855462767677070061}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Mailbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6029825125311587999}
   - component: {fileID: 1481121211130366087}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2347367107967934656}
   - component: {fileID: 6757795610643028726}
   - component: {fileID: 1077497373365216783}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Lightnb
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7343454802757591529}
   - component: {fileID: 7343454802757591528}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

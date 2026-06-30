@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 822849888245209602}
   - component: {fileID: 822849888245209601}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   - component: {fileID: 5625538354094248084}
   - component: {fileID: 3696025847163038370}
   - component: {fileID: 6950851409941845595}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Streetcone
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3396855941241027957}
   - component: {fileID: 5944479671664478019}
   - component: {fileID: 91059007856081850}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Farol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7664768905704162488}
   - component: {fileID: 7664768905704162495}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Collider (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
